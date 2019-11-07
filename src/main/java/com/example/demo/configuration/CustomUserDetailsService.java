@@ -1,8 +1,11 @@
-package com.example.demo.service;
+package com.example.demo.configuration;
 
 import com.example.demo.entity.SysRole;
 import com.example.demo.entity.SysUser;
 import com.example.demo.entity.SysUserRole;
+import com.example.demo.service.SysRoleService;
+import com.example.demo.service.SysUserRoleService;
+import com.example.demo.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -17,11 +20,11 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   CustomUserDetailsService
  * @Description:
  * 配置SpringSecurity
  * 首先我们需要自定义 UserDetailsService ，将用户信息和权限注入进来
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 10:36
  * @Version: 1.0
  */

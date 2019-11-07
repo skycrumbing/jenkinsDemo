@@ -5,9 +5,9 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   SysRoleMapper
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 10:27
  * @Version: 1.0
  */

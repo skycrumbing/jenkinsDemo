@@ -5,9 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   SysPermission
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 14:42
  * @Version: 1.0
  */

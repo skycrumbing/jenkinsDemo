@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   SysRoleService
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 10:31
  * @Version: 1.0
  */

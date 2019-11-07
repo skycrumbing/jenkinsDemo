@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   SysPermissionMapper
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 14:43
  * @Version: 1.0
  */

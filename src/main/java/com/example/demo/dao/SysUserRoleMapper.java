@@ -7,9 +7,9 @@ import org.apache.ibatis.annotations.Select;
 import java.util.List;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   SysUserRoleMapper
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 10:28
  * @Version: 1.0
  */

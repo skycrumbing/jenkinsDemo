@@ -1,6 +1,8 @@
-package com.example.demo.service;
+package com.example.demo.configuration;
 
 import com.example.demo.entity.SysPermission;
+import com.example.demo.service.SysPermissionService;
+import com.example.demo.service.SysRoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.PermissionEvaluator;
 import org.springframework.security.core.Authentication;
@@ -13,9 +15,9 @@ import java.util.Collection;
 import java.util.List;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   CustomPermissionEvaluator
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 14:49
  * @Version: 1.0
  */

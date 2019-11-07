@@ -8,9 +8,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   SysPermissionService
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 14:44
  * @Version: 1.0
  */

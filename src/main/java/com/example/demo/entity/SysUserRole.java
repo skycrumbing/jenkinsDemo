@@ -3,9 +3,9 @@ package com.example.demo.entity;
 import java.io.Serializable;
 
 /**
- * @ClassName :   tantao
+ * @ClassName :   SysUserRole
  * @Description: TODO
- * @Author: Administrator
+ * @Author: tantao
  * @CreateDate: 2019/11/6 10:24
  * @Version: 1.0
  */
