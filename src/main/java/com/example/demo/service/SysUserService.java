@@ -1,9 +1,13 @@
 package com.example.demo.service;
 
+import com.example.demo.configuration.datasource.Master;
 import com.example.demo.dao.SysUserMapper;
 import com.example.demo.entity.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.beans.Transient;
 
 /**
  * @ClassName :   SysUserService
@@ -23,5 +27,13 @@ public class SysUserService {
 
     public SysUser selectByName(String name) {
         return userMapper.selectByName(name);
+    }
+
+    @Master
+    @Transactional
+    public SysUser test(String name) {
+        int i = userMapper.addUser(name);
+        SysUser sysUser = selectByName(name);
+        return sysUser;
     }
 }

@@ -1,4 +1,4 @@
-package com.example.demo.configuration;
+package com.example.demo.configuration.security;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;

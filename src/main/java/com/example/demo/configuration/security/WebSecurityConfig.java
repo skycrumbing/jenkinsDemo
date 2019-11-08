@@ -1,4 +1,4 @@
-package com.example.demo.configuration;
+package com.example.demo.configuration.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -51,7 +51,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 // 如果有允许匿名的url，填在下面
-                .antMatchers("/login","/login/invalid").permitAll()
+                .antMatchers("/login","/login/invalid","/user/*").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 // 设置登陆页

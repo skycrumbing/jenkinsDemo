@@ -1,6 +1,7 @@
 package com.example.demo.dao;
 
 import com.example.demo.entity.SysUser;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -18,4 +19,7 @@ public interface SysUserMapper {
 
     @Select("SELECT * FROM sys_user WHERE name = #{name}")
     SysUser selectByName(String name);
+
+    @Insert("INSERT sys_user values (null, #{name}, 123)")
+    int addUser(String name);
 }
