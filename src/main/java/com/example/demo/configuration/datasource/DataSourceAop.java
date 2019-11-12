@@ -3,6 +3,7 @@ package com.example.demo.configuration.datasource;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,6 +15,8 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component
+//切换数据源的order值要比事务切面的值小，这样优先级高！否则自动切换数据源将会失败！
+@Order(1)
 public class DataSourceAop {
 
     @Pointcut("!@annotation(com.example.demo.configuration.datasource.Master) " +
